@@ -8,7 +8,7 @@ void take(string s){
     	cout<<"helplist"<<endl;
     	cout<<"-------------------------"<<endl;
     	cout<<"version:open version menu."<<endl;
-    	cout<<"help:open this menu."<<"/n";
+    	cout<<"help:open this menu."<<"\n";
     	cout<<">>>";
 	}
 	else if(s=="version"){
