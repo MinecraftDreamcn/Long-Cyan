@@ -18,7 +18,9 @@ void take(string s){
     	cout<<"Beta version 1.0.2.3"<<endl;
     	cout<<"Preview version 1.0.5.3"<<endl;
     	cout<<">>>";
-    	
+	}
+	else if(s==" "){
+		cout<<"Please don't insert a solo space!";
 	}
 	else{
 		cout<<"Please insert a command!"<<endl;
