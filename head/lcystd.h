@@ -1,7 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 void take(string s){
-	if(s=="help"){
+	if(s=="\n"){
+		cout<<">>>";
+	}
+	else if(s=="help"){
     	cout<<"helplist"<<endl;
     	cout<<"-------------------------"<<endl;
     	cout<<"version:open version menu."<<endl;
