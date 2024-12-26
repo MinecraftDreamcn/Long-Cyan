@@ -22,6 +22,9 @@ void take(string s){
 	else if(s==" "){
 		cout<<"Please don't insert a solo space!";
 	}
+	else if(s=="cls"){
+		system("cls");
+	}
 	else{
 		cout<<"Please insert a command!"<<endl;
     	cout<<">>>";
