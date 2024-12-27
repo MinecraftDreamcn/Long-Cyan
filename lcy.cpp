@@ -6,6 +6,7 @@ int main(){
   cout<<"LCY Command-tool"<<endl;
   cout<<"Please update at https://github.com/MinecraftDreamcn/Long-Cyan"<<endl;
   cout<<"Version 1.0.0 Realese"<<endl;
+  cout<<"Insert 'help' to open help menu."<<endl;
   cout<<">>>";
   while(getline(cin,s)){
     take(s);
