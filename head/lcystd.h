@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-void take(string s){
+int take(string s){
 	if(s=="\n"){
 		cout<<">>>";
 	}
@@ -9,6 +9,8 @@ void take(string s){
     	cout<<"-------------------------"<<endl;
     	cout<<"version:open version menu."<<endl;
     	cout<<"help:open this menu."<<"\n";
+    	cout<<"cls:clean screen."<<endl;
+		cout<<"reload:reload a windows command."<<endl; 
     	cout<<">>>";
 	}
 	else if(s=="version"){
@@ -20,10 +22,24 @@ void take(string s){
     	cout<<">>>";
 	}
 	else if(s==" "){
-		cout<<"Please don't insert a solo space!";
+		cout<<"Please don't insert solo space!"<<endl;
+		cout<<">>>";
 	}
 	else if(s=="cls"){
 		system("cls");
+	}
+	else if(s=="reload"){
+		string t;
+		cout<<"What Windows command do you want to reload?"<<endl;
+		cout<<"-->";
+		getline(cin,t);
+		system(t.c_str());
+		int result = system(t.c_str());
+		if (result != 0) {
+    		cerr << "Command execution failed." << endl;
+		}
+		cout<<">>>";
+
 	}
 	else{
 		cout<<"Please insert a command!"<<endl;
