@@ -1,5 +1,5 @@
-; ½Å±¾ÓÉ Inno Setup ½Å±¾Ïòµ¼ Éú³É£¡
-; ÓĞ¹Ø´´½¨ Inno Setup ½Å±¾ÎÄ¼şµÄÏêÏ¸×ÊÁÏÇë²éÔÄ°ïÖúÎÄµµ£¡
+; è„šæœ¬ç”± Inno Setup è„šæœ¬å‘å¯¼ ç”Ÿæˆï¼
+; æœ‰å…³åˆ›å»º Inno Setup è„šæœ¬æ–‡ä»¶çš„è¯¦ç»†èµ„æ–™è¯·æŸ¥é˜…å¸®åŠ©æ–‡æ¡£ï¼
 
 #define MyAppName "Long-Cyan Command Tools"
 #define MyAppVersion "1.0.0"
@@ -8,9 +8,9 @@
 #define MyAppExeName "lcy.exe"
 
 [Setup]
-; ×¢: AppIdµÄÖµÎªµ¥¶À±êÊ¶¸ÃÓ¦ÓÃ³ÌĞò¡£
-; ²»ÒªÎªÆäËû°²×°³ÌĞòÊ¹ÓÃÏàÍ¬µÄAppIdÖµ¡£
-; (ÈôÒªÉú³ÉĞÂµÄ GUID£¬¿ÉÔÚ²Ëµ¥ÖĞµã»÷ "¹¤¾ß|Éú³É GUID"¡£)
+; æ³¨: AppIdçš„å€¼ä¸ºå•ç‹¬æ ‡è¯†è¯¥åº”ç”¨ç¨‹åºã€‚
+; ä¸è¦ä¸ºå…¶ä»–å®‰è£…ç¨‹åºä½¿ç”¨ç›¸åŒçš„AppIdå€¼ã€‚
+; (è‹¥è¦ç”Ÿæˆæ–°çš„ GUIDï¼Œå¯åœ¨èœå•ä¸­ç‚¹å‡» "å·¥å…·|ç”Ÿæˆ GUID"ã€‚)
 AppId={{4A96EED4-26DE-4FF4-907E-0D2F016AE385}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
@@ -23,9 +23,9 @@ DefaultDirName=C:\lcycmt
 DisableDirPage=yes
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
-; [Icons] µÄ¡°quicklaunchicon¡±ÌõÄ¿Ê¹ÓÃ {userappdata}£¬¶øÆä [Tasks] ÌõÄ¿¾ßÓĞÊÊºÏ IsAdminInstallMode µÄ¼ì²é¡£
+; [Icons] çš„â€œquicklaunchiconâ€æ¡ç›®ä½¿ç”¨ {userappdata}ï¼Œè€Œå…¶ [Tasks] æ¡ç›®å…·æœ‰é€‚åˆ IsAdminInstallMode çš„æ£€æŸ¥ã€‚
 UsedUserAreasWarning=no
-; ÒÔÏÂĞĞÈ¡Ïû×¢ÊÍ£¬ÒÔÔÚ·Ç¹ÜÀí°²×°Ä£Ê½ÏÂÔËĞĞ£¨½öÎªµ±Ç°ÓÃ»§°²×°£©¡£
+; ä»¥ä¸‹è¡Œå–æ¶ˆæ³¨é‡Šï¼Œä»¥åœ¨éç®¡ç†å®‰è£…æ¨¡å¼ä¸‹è¿è¡Œï¼ˆä»…ä¸ºå½“å‰ç”¨æˆ·å®‰è£…ï¼‰ã€‚
 ;PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
 OutputBaseFilename=LCY SETUP
@@ -69,7 +69,7 @@ Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescrip
 [Files]
 Source: "C:\Users\41836\Documents\lcy.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\41836\Documents\head\back.bat"; DestDir: "{app}"; Flags: ignoreversion
-; ×¢Òâ: ²»ÒªÔÚÈÎºÎ¹²ÏíÏµÍ³ÎÄ¼şÉÏÊ¹ÓÃ¡°Flags: ignoreversion¡±
+; æ³¨æ„: ä¸è¦åœ¨ä»»ä½•å…±äº«ç³»ç»Ÿæ–‡ä»¶ä¸Šä½¿ç”¨â€œFlags: ignoreversionâ€
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
