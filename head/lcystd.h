@@ -35,10 +35,6 @@ int take(string s){
 		cout<<"-->";
 		getline(cin,t);
 		system(t.c_str());
-		int result = system(t.c_str());
-		if (result != 0) {
-    		cerr << "Command execution failed." << endl;
-		}
 		cout<<">>>";
 
 	}
