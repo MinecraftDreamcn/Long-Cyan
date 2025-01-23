@@ -5,8 +5,8 @@ int main(){
   string s;
   cout<<"LCY Command-tool"<<endl;
   cout<<"Please update at https://github.com/MinecraftDreamcn/Long-Cyan"<<endl;
-  cout<<"Version 1.0.0 Realese"<<endl;
-  cout<<"Insert 'help' to open help menu."<<endl;
+  cout<<"Version 1.0.3 Realese"<<endl;
+  cout<<"Insert 'help' to open help menu.Insert 'exit' to exit program."<<endl;
   cout<<">>>";
   while(getline(cin,s)){
     take(s);
