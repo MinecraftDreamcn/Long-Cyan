@@ -9,7 +9,9 @@ int main(){
   cout<<"Insert 'help' to open help menu.Insert 'exit' to exit program."<<endl;
   cout<<">>>";
   while(getline(cin,s)){
-    take(s);
+    if(take(s)==0){
+      return 1036;
+    }  
   }
   return 0;
 }
