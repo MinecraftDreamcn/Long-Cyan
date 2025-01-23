@@ -10,8 +10,9 @@ int take(string s){
     		cout<<"version:open version menu."<<endl;
     		cout<<"help:open this menu."<<"\n";
     		cout<<"cls:clean screen."<<endl;
-		cout<<"reload:reload a windows command."<<endl; 
-		cout<<"exit:exit this program.";
+			cout<<"reload:reload a windows command."<<endl; 
+			cout<<"exit:exit this program."<<endl;
+			cout<<"cmd:open cmd."<<endl;
     		cout<<">>>";
 	}
 	else if(s=="version"){
@@ -28,18 +29,30 @@ int take(string s){
 	}
 	else if(s=="cls"){
 		system("cls");
+		cout<<">>>"; 
+	}
+	else if(s=="cmd"){
+		system("cls");
+		system("title C:\\WINDOWS\\system32\\cmd.exe");
+		system("cmd");
 	}
 	else if(s=="reload"){
 		string t;
 		cout<<"What Windows command do you want to reload?"<<endl;
 		cout<<"-->";
 		getline(cin,t);
-		system(t.c_str());
+		if(t=="cmd"){
+			system("cls");
+			system("title C:\\WINDOWS\\system32\\cmd.exe");
+			system("cmd");
+		}
+		else{
+			system(t.c_str());
+		}
 		cout<<">>>";
-
 	}
 	else if(s=="exit"){
-		return 0;
+		return 5;
 	}
 	else{
 		cout<<"Please insert a command!"<<endl;
