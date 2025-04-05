@@ -1,61 +1,62 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int take(string s){
-	if(s=="\n"){
-		cout<<">>>";
-	}
-	else if(s=="help"){
-    		cout<<"helplist"<<endl;
-    		cout<<"-------------------------"<<endl;
-    		cout<<"version:open version menu."<<endl;
-    		cout<<"help:open this menu."<<"\n";
-    		cout<<"cls:clean screen."<<endl;
-			cout<<"reload:reload a windows command."<<endl; 
-			cout<<"exit:exit this program."<<endl;
-			cout<<"cmd:open cmd."<<endl;
-    		cout<<">>>";
-	}
-	else if(s=="version"){
-    		cout<<"Long Cyan Command Tools"<<endl;
-    		cout<<"Version 1.0.0"<<endl;
-    		cout<<"Test version 1.0.3.7"<<endl;
-    		cout<<"Beta version 1.0.2.3"<<endl;
-    		cout<<"Preview version 1.0.5.3"<<endl;
-    		cout<<">>>";
-	}
-	else if(s==" "){
-		cout<<"Please don't insert solo space!"<<endl;
-		cout<<">>>";
-	}
-	else if(s=="cls"){
-		system("cls");
-		cout<<">>>"; 
-	}
-	else if(s=="cmd"){
-		system("cls");
-		system("title C:\\WINDOWS\\system32\\cmd.exe");
-		system("cmd");
-	}
-	else if(s=="reload"){
-		string t;
-		cout<<"What Windows command do you want to reload?"<<endl;
-		cout<<"-->";
-		getline(cin,t);
-		if(t=="cmd"){
-			system("cls");
-			system("title C:\\WINDOWS\\system32\\cmd.exe");
-			system("cmd");
-		}
-		else{
-			system(t.c_str());
-		}
-		cout<<">>>";
-	}
-	else if(s=="exit"){
-		return 5;
-	}
-	else{
-		cout<<"Please insert a command!"<<endl;
-    		cout<<">>>";
-	}
+
+int take(string s) {
+    if (s.empty()) {
+        cout << ">>>";
+        return 0;
+    } else if (s == "help") {
+        cout << "helplist" << endl;
+        cout << "-------------------------" << endl;
+        cout << "help: open this menu." << endl;
+        cout << "version: open version menu." << endl;
+        cout << "cls: clean screen." << endl;
+        cout << "cmd: open cmd." << endl;
+        cout << "reload: reload a windows command." << endl;
+        cout << "exit: exit this program." << endl;
+        cout << ">>>";
+        return 0;
+    } else if (s == "version") {
+        cout << "Long Cyan Command Tools" << endl;
+        cout << "Version-1.3.0" << endl;
+        cout << "Test version-1.04.5.6" << endl;
+        cout << "Beta version-1.1.8.9" << endl;
+        cout << "Preview version-1.2.17.1" << endl;
+        cout << ">>>";
+        return 0;
+    } else if (s == "cls") {
+        system("cls");
+        cout << ">>>";
+        return 0;
+    } else if (s == "cmd") {
+        system("cls");
+        system("title C:\\WINDOWS\\system32\\cmd.exe");
+        system("cmd");
+        return 0;
+    } else if (s == "reload") {
+        string t;
+        cout << "What Windows command do you want to reload?" << endl;
+        cout << "-->";
+        getline(cin, t);
+        if (t == "cmd") {
+            system("cls");
+            system("title C:\\WINDOWS\\system32\\cmd.exe");
+            system("cmd");
+        } else {
+            system(t.c_str());
+        }
+        cout << ">>>";
+        return 0;
+    } else if (s == "exit") {
+        return 5;
+    } else if (s == " ") {
+        cout << "Please don't insert solo space!" << endl;
+        cout << ">>>";
+        return 0;
+    } else {
+        cout << "Invalid command. Type 'help' for a list of commands." << endl;
+        cout << ">>>";
+        return 0;
+    }
 }
+
