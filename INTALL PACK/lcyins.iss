@@ -1,9 +1,9 @@
 ; 脚本由 Inno Setup 脚本向导 生成！
 ; 有关创建 Inno Setup 脚本文件的详细资料请查阅帮助文档！
 
-#define MyAppName "Long-Cyan Command Tools"
-#define MyAppVersion "1.0.0"
-#define MyAppPublisher "MinecraftDreamCN"
+#define MyAppName "Long-Cyan Command tools"
+#define MyAppVersion "1.3.0"
+#define MyAppPublisher "DreamCN"
 #define MyAppURL "https://github.com/MinecraftDreamcn/Long-Cyan"
 #define MyAppExeName "lcy.exe"
 
@@ -11,7 +11,7 @@
 ; 注: AppId的值为单独标识该应用程序。
 ; 不要为其他安装程序使用相同的AppId值。
 ; (若要生成新的 GUID，可在菜单中点击 "工具|生成 GUID"。)
-AppId={{4A96EED4-26DE-4FF4-907E-0D2F016AE385}
+AppId={{E10A5C37-836A-4D90-91A9-842F1F419829}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -19,16 +19,18 @@ AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-DefaultDirName=C:\lcycmt
+DefaultDirName=C:\lcy\{#MyAppName}
 DisableDirPage=yes
 DefaultGroupName={#MyAppName}
-AllowNoIcons=yes
+DisableProgramGroupPage=yes
 ; [Icons] 的“quicklaunchicon”条目使用 {userappdata}，而其 [Tasks] 条目具有适合 IsAdminInstallMode 的检查。
 UsedUserAreasWarning=no
+LicenseFile=D:\Users\41836\Desktop\杂项\Long-Cyan-Reallese\LICENSE
 ; 以下行取消注释，以在非管理安装模式下运行（仅为当前用户安装）。
 ;PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
-OutputBaseFilename=LCY SETUP
+OutputDir=D:\Users\41836\Desktop
+OutputBaseFilename=LCY_Setup
 Password=lcycmtantprvtkey1036github8099
 Encryption=yes
 Compression=lzma
@@ -67,8 +69,8 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 6.1; Check: not IsAdminInstallMode
 
 [Files]
-Source: "C:\Users\41836\Documents\lcy.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\41836\Documents\head\back.bat"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Users\41836\Desktop\杂项\Long-Cyan-Reallese\lcy.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\lcycmt\back.bat"; DestDir: "{app}"; Flags: ignoreversion
 ; 注意: 不要在任何共享系统文件上使用“Flags: ignoreversion”
 
 [Icons]
