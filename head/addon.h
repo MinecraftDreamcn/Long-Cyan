@@ -66,7 +66,7 @@ bool switcher(string fn,int n) {
 		break;
 	}
 }
-	cout<<">>>";
+	cout<<"\n>>>";
 }
 
 int import(string n){
