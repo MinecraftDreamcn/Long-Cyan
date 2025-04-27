@@ -2,7 +2,7 @@
 ; 有关创建 Inno Setup 脚本文件的详细资料请查阅帮助文档！
 
 #define MyAppName "Long-Cyan Command tools"
-#define MyAppVersion "1.3.0"
+#define MyAppVersion "1.4.0"
 #define MyAppPublisher "DreamCN"
 #define MyAppURL "https://github.com/MinecraftDreamcn/Long-Cyan"
 #define MyAppExeName "lcy.exe"
