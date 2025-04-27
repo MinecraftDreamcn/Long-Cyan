@@ -3,6 +3,7 @@
 #include"head/lcystd.h"
 using namespace std;
 int main(){
+  //const
   string s;
   cout<<"LCY Command-tool"<<endl;
   cout<<"Please update at https://github.com/MinecraftDreamcn/Long-Cyan"<<endl;
@@ -26,12 +27,12 @@ int main(){
   Sleep(3000);
   cout<<"	\n";
   cout<<"--------------------------------"<<endl;
-	cout<<"Process exited after 24.97 seconds with return value 7"<<endl;
+	cout<<"Process exited after 6.649 seconds with return value 7"<<endl;
 	system("pause");
 /*
-	
+
 --------------------------------
-Process exited after 24.97 seconds with return value 7
+Process exited after 18.23 seconds with return value 1036
 */ 
   return 7;
 }
