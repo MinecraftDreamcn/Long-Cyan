@@ -12,7 +12,7 @@ int main(){
   cout<<">>>";
   while(getline(cin,s)){
     if(take(s)==5){
-      return 1036;
+      return 1024;
     }  
   }
   cout<<"GOODBYE CTRL+Z USER!"<<endl;
