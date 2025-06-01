@@ -14,13 +14,13 @@ void use(string n){
         	cout<<"1:math\n"; 
 		}
 		else{
-			cout<<"1:math(off)\n";
+			cout<<"1:math(off/none)\n";
 		}
 		if(i[2]!=0){
         	cout<<"2:ccas\n"; 
 		}
 		else{
-			cout<<"2:ccas(off)\n";
+			cout<<"2:ccas(off/none)\n";
 		}
         cout << "-->";
         getline(cin, t);
