@@ -5,7 +5,7 @@ bool i[5000000];
 bool switcher(string fn,int n);
 void use(string n){
 	if(n=="?")
-	cout<<"Import helplist\n-------------------------\nmath: download the math tools.\nccas: download the command can add space.\nmgr:launch addon manager.\n>>>";
+	cout<<"Import helplist\n-------------------------\nmath: download the math tools.\n\nmgr:launch addon manager.\n>>>";
 	else if(n=="mgr"){
     	i[0]=1;
         string t;
@@ -16,28 +16,15 @@ void use(string n){
 		else{
 			cout<<"1:math(off/none)\n";
 		}
-		if(i[2]!=0){
-        	cout<<"2:ccas\n"; 
-		}
-		else{
-			cout<<"2:ccas(off/none)\n";
-		}
         cout << "-->";
         getline(cin, t);
         if(t=="1"){
         	switcher("math",1); 
 		}
-		else if(t=="2"){
-			switcher("ccas",2);
-		}
 	}
 	else{
 		if(n=="math"&&i[1]!=0){
 		system("start addon\\math.exe");
-		cout<<">>>";
-		}
-		else if(n=="ccas"&&i[2]!=0){
-		system("start addon\\ccas.exe");
 		cout<<">>>";
 		}
 	}
@@ -87,17 +74,6 @@ int import(string n){
     	i[1]=1;
     	cout << "Import the fuction:Math!"<< endl;
 	}
-	else if(n=="ccas"){
-		string url = "https://github.com/MinecraftDreamcn/LCY-Add_on/ccas.exe";
-    	string output_file = "addon\\ccas.exe";
-    	string command = "curl -s -o " + output_file + " " + url;
-    	int result = system(command.c_str());
-    	if (result != 0) {
-      		cerr << "Failed to download the Add-on." << endl;
-     		return 1;
-    	}
-    	i[2]=1;
-    	cout << "Import the fuction:Command can add space!"<< endl;
-	}
 	return 0;
 }
+
