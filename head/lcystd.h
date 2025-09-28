@@ -52,19 +52,28 @@ int take(string s) {
     }
     else if(s=="import"){
 		string t;
+		int tmp;
 		cout << "Insert ? to show helplist." << endl;
-        cout << "What Add-on do you want to use?" << endl;
-        cout << "-->";
-        getline(cin, t);
+        cout << "What Add-on do you want to import(1) or use(2)?" << endl;
+        cout << "Number-->";
+        cin>>tmp;
+		if(tmp==1){
+			cout << "What Add-on do you want to import?" << endl;
+        	cout << "-->";
+			getline(cin,t);
+			import(t)
+		}
+		else if(tmp==2){
+			cout << "What Add-on do you want to use?" << endl;
+        	cout << "-->";
+			getline(cin,t);
+			use(t)
+		}
+		else{
+			cout << "Invalid command." << endl;
+        	cout << "-->";
+		}
         import(t);
-	}
-	else if(s=="use"){
-		string t;
-		cout << "Insert ? to show helplist." << endl;
-        cout << "What Add-on do you want to use?" << endl;
-        cout << "-->";
-        getline(cin, t);
-        use(t);
 	}
 	else if (s == "exit") {
         return 5;
